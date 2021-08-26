@@ -1,0 +1,131 @@
+body {
+  background-color: black;
+  /* background-image: linear-gradient(175deg, #000000 0%, #101c29 100%);
+  background-repeat: no-repeat; */
+}
+
+:root {
+  --primaryColor: rgb(20, 213, 220);
+}
+.m-100 {
+  margin-top: 100px;
+}
+
+.heading {
+  font-family: lobster;
+  font-size: 50px;
+}
+
+.navbar-nav ul li:hover {
+  color: crimson !important;
+}
+
+.nav-item {
+  border-bottom: 2px solid transparent;
+  transition: 0.5s;
+}
+.nav-item:hover {
+  border-bottom: 2px solid var(--primaryColor);
+}
+.leftText h4 {
+  font-family: lobster;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.leftText h1 {
+  color: var(--primaryColor);
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .social a i {
+  transition: 0.5s;
+}
+header .social a:hover i {
+  transform: scale(2);
+}
+/* // service section  */
+
+.services .card {
+  box-shadow: 0px 0px 3px var(--primaryColor);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.4s;
+}
+.services .card:hover {
+  box-shadow: 0px 0px 10px var(--primaryColor);
+}
+
+/* skill  */
+
+.skills .arif {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.skills img {
+  border-left: 10px solid tomato;
+  border-image: linear-gradient(tomato, purple);
+  border-image-slice: 1;
+}
+.skills h3 {
+  border-bottom: 1px solid var(--primaryColor);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-family: poppins;
+}
+/* recent work  */
+/* @keyframes workanimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+} */
+/* @keyframes borderbottom {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 100%;
+  }
+} */
+.recent-work .image img {
+  /* animation: workanimation 40s infinite; */
+}
+.recent-work h2 {
+  /* animation: borderbottom 40s infinite; */
+  color: rgb(253 180 17);
+  border-bottom: 1px solid yellow;
+  padding-bottom: 10px;
+  font-family: poppins;
+}
+.recent-work p {
+  font-family: poppins;
+  font-weight: 300;
+}
+.recent-work p span {
+  color: rgb(253 180 17);
+}
+.recent-work a.btn {
+  border: 2px solid green;
+  color: white;
+  transition: 0.5s;
+}
+.recent-work a.btn:hover {
+  background-color: green;
+}
+/* media query  */
+@media all and (max-width: 536px) {
+  .leftText h1 {
+    font-size: 2.5rem;
+  }
+}
+@media all and (max-width: 767px) {
+  .col-sm-rev {
+    flex-direction: column-reverse;
+  }
+}
+/* service section  */

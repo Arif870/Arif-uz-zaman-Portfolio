@@ -1,0 +1,68 @@
+body {
+  background-image: url(../media/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+:root {
+  --primaryColor: rgb(20, 213, 220);
+}
+.m-100 {
+  margin-top: 100px;
+}
+
+.heading {
+  font-family: lobster;
+  font-size: 50px;
+}
+
+.navbar-nav ul li:hover {
+  color: crimson !important;
+}
+
+.nav-item {
+  border-bottom: 2px solid transparent;
+  transition: 0.5s;
+}
+.nav-item:hover {
+  border-bottom: 2px solid var(--primaryColor);
+}
+.leftText h4 {
+  font-family: lobster;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.leftText h1 {
+  color: var(--primaryColor);
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .social a i {
+  transition: 0.5s;
+}
+header .social a:hover i {
+  transform: scale(2);
+}
+
+/* overlay desing  */
+
+.overlay {
+  width: 60%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.432);
+  z-index: 1;
+  /* box-shadow: 0px 0px 10px rgba(15, 15, 15, 0); */
+  position: absolute;
+  border-radius: 10px;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay h1 {
+  z-index: 9999;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
